@@ -194,3 +194,7 @@ Adding is idempotent-safe (duplicates are rejected, not silently doubled), and f
    curl -s -o /dev/null -w "%{http_code}\n" -X POST http://127.0.0.1:5000/watchlist/<USER_ID>/add -H "Content-Type: application/json" -d '{"film_id": "does-not-exist"}'
    ```
 8. Or just run the suite: `pytest tests/ -v` (watchlist + collection tests should all pass).
+
+## git log screenshot
+
+![git log --oneline](git-log.png)
